@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="/CSS/styles.css" />
+
+    <!-- cdnjs fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header section starts here -->
+    <header class="main" id="home">
+      <div class="left">
+        <nav>
+          <h1>Lowkee<span>.</span></h1>
+          <div class="nav-list">
+            <ul class="nav-links">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#about-me">ABOUT ME</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <!-- hamburger menu bar -->
+            <div class="hamburger-menu" onclick="toggleBar();">
+              <i class="fa solid fa-bars-staggered"></i>
+            </div>
+          </div>
+        </nav>
+        <div class="hero-text">
+          <h1>I'm Lowkee</h1>
+          <p>I'M A DEVELOPER</p>
+          <button type="button">
+            <a href="https://wa.me/09065815402"
+              target="_blank">Get in touch <span><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </button>
+          <div class="rate">
+            <div class="review">
+              <strong>280<span>+</span></strong> <br />Google Review
+            </div>
+            <div class="experience">
+              <strong>15<span>+</span></strong> <br />Years Experience
+            </div>
+            <div class="award">
+              <strong>49<span>+</span></strong> <br />Award Winning
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <button class="lets-talk">Let's Talk</button>
+        <!-- <div class="img"><img src="/img/doggo.png" alt="doggo" /></div> -->
+        <!-- <div class="experties">MY EXPERTIES</div> -->
+        <div class="icons"></div>
+        <!-- <div class="my-img"><img src="/img/doggo.png" alt="doggo" /></div> -->
+      </div>
+      <div class="my-img"><img src="/img/newimg.JPG" alt="doggo" /></div>
+    </header>
+    <!-- header section ends here -->
+
+    <!-- hero-section starts here -->
+    <div class="hero-img">
+      <img src="/img/2nd.png" alt="" />
+      <img src="/img/1st.png" alt="" />
+      <img src="/img/2nd.png" alt="" />
+      <img src="/img/1st.png" alt="" />
+      <img src="/img/2nd.png" alt="" />
+    </div>
+    <!-- hero section ends here -->
+
+    <!-- main A section starts here -->
+    <div class="services" id="services">
+      <div class="left-content">
+        <h4>SERVICES</h4>
+        <p>
+          Get a powerful website that delivers results with an all-in-one
+          solution
+        </p>
+      </div>
+      <div class="right-contents">
+        <div class="part1">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <h3>
+            WEB DEVELOPER <br /> <br>
+            <span
+              >Say goodbye to the hassle of managing multiple providers and get
+              an all-in-one website solution that covers design and
+              development</span
+            >
+          </h3>
+        </div>
+        <div class="part2">
+          <div class="icon"><i class="fa-brands fa-square-git"></i></div>
+          <h3>
+            GIT <br /> <br>
+            <span
+              >I am good at using Git for version control, managing branches,
+              staging changes, and wrting meaningful commit messages</span
+            >
+          </h3>
+        </div>
+        <div class="part3">
+          <div class="icon"><i class="fa-brands fa-github"></i></div>
+          <h3>
+            GITHUB <br /> <br>
+            <span
+              >I am good at using GitHub to; Host and share code repositories
+              and also create and manage branches for new features or bug
+              fixes</span
+            >
+          </h3>
+        </div>
+      </div>
+    </div>
+    <!-- main section A section ends here -->
+
+    <!-- main section B starts here -->
+    <div class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project1">
+        <div class="text">
+          <h3>Project 1</h3>
+          <p>
+            Say goodbye to the hassle of managing multiple providers here is a solution that covers design and development
+          </p>
+          <a href="/img/project1.jpg"
+            >View Project <span><i class="fa-solid fa-arrow-right"></i></span
+          ></a>
+        </div>
+        <img src="/img/project1.jpg" alt="" />
+      </div>
+      <div class="project2">
+        <div class="text">
+          <h3>Project 2</h3>
+          <p>
+            Designed a footer section. arranged in a responsive flex
+            layout to ensure accessibility accross all screen sizes
+          </p>
+          <a href="/img/project2.jpg"
+            >View Project <span><i class="fa-solid fa-arrow-right"></i></span
+          ></a>
+        </div>
+        <img src="/img/project2.jpg" alt="" />
+      </div>
+      <div class="project3">
+        <div class="text">
+          <h3>Project 3</h3>
+          <p>
+            Designed a header section with a responsive layout that adapts
+            across devices. includes a
+            collapsible mobile menu for smaller screen
+          </p>
+          <a href="/img/project3.jpg"
+            >View Project <span><i class="fa-solid fa-arrow-right"></i></span
+          ></a>
+        </div>
+        <img src="/img/project3.jpg" alt="" />
+      </div>
+    </div>
+    <!-- main section B ends here -->
+
+    <!-- About section starts here-->
+    <div class="about-me">
+      <div class="left-part" id="about-me">
+        <div class="left-empty">
+          <h1>hello</h1>
+        </div>
+        <img src="/img/newimg.JPG" alt="" />
+      </div>
+      <div class="right-part">
+        <h4>ABOUT - LOWKEE</h4>
+        <p>
+          <span
+            >Hi! I'm a passionate front-end developer with a strong eye for
+            design and detail. I love turning ideas into clean, interactive, and
+            responsive websites!!!</span
+          >
+        </p>
+        <p>
+          Whether it's building reusable components, implementing smooth UI
+          effects, or optimizing performance, I enjoy every step of the web
+          development process. I started my journey by learning HTML, CSS, and
+          JavaScript, and gradually expanded my skill set to include modern
+          frameworks, responsive design principles. I'm always looking to
+          improve and keep up with new tools and trends in the web world. When
+          I'm not coding, I enjoy exploring creative design inspirations,
+          learning new techniques, and collaborating with other developers. I
+          believe great websites are built not just with code, but with purpose
+          and empathy.
+        </p>
+        <div class="right-icons">
+          <div class="icon1"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+          <div class="icon2"><a href="https://twitter.com/AY0MID3V" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+          <div class="icon3"><a href="https://www.instagram.com/jiggy_lowkee?igsh=MWVjdTk3aTVocWZocQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+          <div class="icon4"><a href="https://www.linkedin.com/in/akeju-tolulope-82b152364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <!-- about section ends here -->
+
+    <!-- My Process section starts here -->
+    <div class="process">
+      <div class="left-content">
+        <h4>MY PROCESS</h4>
+        <p>
+          Transform your website dreams into a reality in just a few simple
+          steps
+        </p>
+        <button type="button">
+          <a href=""
+            >Get in touch <span><i class="fa-solid fa-arrow-right"></i></span
+          ></a>
+        </button>
+      </div>
+      <div class="right-contents">
+        <div class="part1">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <h3>
+            PLANNING & DESIGN <br /> <br>
+            <span
+              >The first step involves understanding the project goals and
+              laying the foundation for the user experience. <br />
+              I create wireframes or sketches to map out the site structure,
+              navigation flow and key sections like the header, footer and
+              content areas. <br />I use visual code to write my code. <br />
+              During this phasem, i also plan for responsiveness and
+              accessibility from the start.</span
+            >
+          </h3>
+        </div>
+        <div class="part2">
+          <div class="icon"><i class="fa-brands fa-square-git"></i></div>
+          <h3>
+            DEVELOPMENT & IMPLEMENTATION <br /> <br><span
+              >Once the design is approved, i begin building the project using
+              HTML, CSS, and Javascript. I apply clean, sematic markup and
+              modular styling practices. I ensure mobile responsiveness using
+              media queries and test across devices</span
+            >
+          </h3>
+        </div>
+        <div class="part3">
+          <div class="icon"><i class="fa-brands fa-github"></i></div>
+          <h3>
+            TESTING & DEPLOYMENT <br /> <br><span
+              >After deployment, i thoroughly test the site for bugs, layout
+              shifts, accessibility issues, and responsivenes, once finalized,
+              the project is deployed using tools like Github pages or
+              Vercel.</span
+            >
+          </h3>
+        </div>
+      </div>
+    </div>
+    <!-- my process section ends here -->
+
+    <!--Footer section starts here -->
+    <footer>
+      <div class="left-footer" id="contact">
+        <h2>GET IN TOUCH</h2>
+        <p><span>Let's Discuss Projects</span></p>
+        <p>
+          Get in touch with me for any kind of help. I am here to give you the
+          best and also here to help you to find your projects.
+        </p>
+        <div class="form">
+          <label for="name" class="name">
+            <input type="name" id="name" placeholder="Full Name *" />
+          </label>
+
+          <label for="email" class="mail">
+            <input type="email" id="email" placeholder="Email *" />
+          </label>
+
+          <label for="subject" class="sub">
+            <input type="text" id="subject" placeholder="Subject *" />
+          </label>
+          <br />
+
+          <div class="sub4">
+            <label for="message" class="message">
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Your message *"
+              ></textarea>
+            </label>
+            <br />
+          </div>
+          <button type="submit">Send Message</button>
+        </div>
+      </div>
+
+      <div class="right-footer">
+        <h2>Let's Discuss Your Project</h2>
+        <div class="contact">
+          <i class="fa-solid fa-phone"></i>
+          <h4>Phone<br /><br /><span>+234 90 6581 5402</span></h4>
+        </div>
+        <div class="contact">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>Mail<br /><br /><span>akejutolulope3@gmail.com</span></h4>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>&copy; 2025 copyright all right reserved</p>
+    </div>
+    <!-- footer section ends here -->
+    <script src="/Js/script.js"></script>
+  </body>
+</html>

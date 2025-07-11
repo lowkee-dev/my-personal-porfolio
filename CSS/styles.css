@@ -1,0 +1,724 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    overflow: hidden; 
+    position: relative; 
+}
+.left{
+    background-color: black;
+    color: white;
+    width: 100%; 
+    padding: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    /* z-index: 2; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    /* position: fixed; */
+    z-index: 9999;
+}
+nav a{
+    text-decoration: none
+}
+.right{
+    background-color: #A6FF00;
+    width: 800px;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+/* .nav-list{
+    position: absolute;
+} */
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: white;
+    margin-left: 23%;
+    width: 100%;
+}
+
+.nav-list ul a{
+    color: rgb(255, 255, 255);
+    z-index: 5;
+}
+.nav-list ul a:hover{
+    color: #A6FF00;
+}
+.hamburger-menu{
+    display: none;
+    cursor: pointer;
+}
+.right button{
+    margin-left: 70%;
+    padding: 10px;
+    width: 100px;
+    background-color: black;
+    color: aliceblue;
+}
+.my-img{
+    left: 45%;
+    z-index: 2;
+    position: absolute;
+}
+.hero-text h1{
+    margin-bottom: 5%;
+    font-size: 500%;
+    font-weight: 400;
+}
+.hero-text{
+    margin-top: 50px;
+}
+.hero-text p{
+    margin-bottom: 5%;
+    border: 2px solid #A6FF00;
+    width: 180px;
+    padding: 10px;
+    background-color: #ea950c;
+    color: black;
+    animation: typing 3s steps(15) 1s infinite alternate, blink 0.7s step-end infinite;
+}
+@keyframes typing {
+    from{
+        width: 1;
+    }to{
+        width: 15ch;
+    }
+}
+.hero-text button{
+    margin-bottom: 10%;
+    width: 150px;
+    padding: 0.7rem;
+    background-color: transparent;
+    border: 1px solid #333;
+
+
+}
+.hero-text button:hover{
+    background-color: #333;
+}
+.hero-text button a{
+    text-decoration: none;
+    color: white;
+}
+.hero-text .rate{
+    display: flex;
+    gap: 40px;  
+}
+.rate strong{
+    font-size: 200%;
+}
+.rate strong span{
+    color: #A6FF00;
+}
+.hero-img{
+    display: flex;
+}
+.hero-img img{
+    margin-top: 1%;
+    padding: 2%;
+    width: 20%;
+    border-bottom: 1px solid #8f8c8c;
+}
+.services, .process{
+    display: flex;
+    padding: 60px;
+    gap: 60px;
+}
+.left-content h4{
+    color: #807f7f;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+.left-content p{
+    font-size: 180%;
+    max-width: 400px;
+}
+.right-contents .part1{
+    border: 1px solid #ddd7d7;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+.right-contents h3{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.right-contents span{
+    font-size: 90%;
+    color: #807f7f;
+}
+.right-contents .part2{
+    border: 1px solid #ddd7d7;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+.right-contents .part3{
+    border: 1px solid #ddd7d7;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    gap: 20px;
+}
+.right-contents .icon{
+    border: 1px solid black;
+    width: 40px;
+    height: 37px;
+    padding: 10px;
+    background-color: black;
+    color: #ffff;
+}
+.projects h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.projects img{
+    max-width: 100%;
+    margin-left: 60px;
+    width: 908px;
+    justify-content: center;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.text{
+    position: absolute;
+    z-index: 2;
+    color: #ffff;
+    left: 100px;
+    margin-top: 17%;
+    /* border: 2px solid #333; */
+    padding: 40px;
+    max-width: 100%;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+}
+.text h3{
+    margin-bottom: 15px;
+}
+.text p{
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 15px;
+}
+.text a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: 1px solid #333;
+    color: white;
+    padding: 6px;
+    gap: 10px;
+}
+.process button{
+    margin-top: 8%;
+    width: 150px;
+    padding: 0.7rem;
+    background-color: black;
+    /* border: 1px solid #333; */
+}
+.process button a{
+    color: #fff;
+    text-decoration: none;
+}
+.about-me{
+    display: flex;
+    background-color: black;
+    gap: 80px;
+    position: relative;
+    /* padding: 60px; */
+}
+.left-empty{
+    background-color: #A6FF00;
+    position: absolute;
+    margin-top: 90px;
+    width: 400px;
+    height: 400px;
+    border-radius: 300px;
+}
+.left-part img{
+    margin-bottom: px;
+    width: 350px;
+    /* border-radius: 900px; */
+    position: relative;
+}
+.right-part{
+    color: white;
+    width: 100%;
+    padding: 60px;
+}
+.right-part h4{
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.right-part p span{
+    font-size: 30px;
+}
+.right-part p{
+    margin-bottom: 20px;
+}
+.right-part p{
+    font-size: 13px;
+}
+.right-icons{
+    gap: 30px;
+    display: flex;
+}
+.icon1, .icon2, .icon3, .icon4{
+    border: 1px solid #3b3a3a;
+    padding: 6px;
+    width: 30px;
+    border-radius: 7px;
+}
+footer{
+    display: flex;
+    padding: 60px;
+    background-color: black;
+    color: #fff;
+    max-width: 100%;
+    gap: 300px;
+    border-bottom: 1px solid #2c2b2b;
+    
+    
+}
+
+.left-footer{
+    border: 1px solid #2c2b2b;
+    padding: 45px;
+    max-width: 100%;
+    width: 650px;
+    border-radius: 10px;
+}
+.left-footer h2{
+    margin-bottom: 15px;
+    font-weight: 200;
+    color: #646464;
+    font-size: 20px;
+}
+.left-footer span{
+    font-size: 30px;
+}
+.left-footer p{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.form input{
+    margin-bottom: 40px;
+    padding: 10px;
+    color: #8f8c8c;
+    background-color: #171717;
+    
+}
+.mail input{
+    margin-left: 32px;
+    width: 270px;
+}
+.name input{
+    width: 250px;
+}
+.sub input{
+    width: 556px;
+}
+.message textarea{
+    width: 556px;
+    height: 100px;
+    background-color: #171717;
+    padding: 10px;
+    margin-bottom: 20px
+}
+.form button{
+    width: 556px;
+    padding: 10px;
+}
+.contact{
+    display: flex;
+    gap: 10px;
+}
+.right-footer h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact{
+    margin-bottom: 30px;
+}
+.contact i{
+    border: 1px solid #2c2b2b;
+    padding: 15px;
+    border-radius: 8px;
+}
+.contact h4{
+    font-weight: 400;
+}
+.contact span{
+    color: #646464;
+    gap: 10px;
+}
+.copyright{
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+}
+
+/* media query */
+@media screen and (max-width: 1441px){
+    .my-img img{
+        width: 450px;
+        margin-top: 55px; 
+    }
+    .left{
+        justify-content: space-between;
+    }
+    .hero-text h1{
+        margin-top: 130px;
+    }
+    .project1 img{
+        width: 1325px;
+        height: 500px;
+    }
+    .project2 img{
+        width: 1325px;
+        height: 500px;
+    }
+    .project3 img{
+        width: 1325px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .project1 img{
+        width: 910px;
+    }
+    .my-img img{
+        margin-bottom: 20px;
+        width: 450px;
+        /* display: none; */
+    }
+    .project2 img{
+        width: 910px;
+    }
+    .project3 img{
+        width: 910px;
+    }
+    .mail input{
+        width: 190px;
+    }
+    .name input{
+        width: 190px;
+    }
+    .sub input{
+        width: 418px;
+    }
+    .message textarea{
+        width: 418px;
+    }
+    .form button{
+        width: 418px;
+    }
+    footer{
+        gap: 100px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* nav{
+        position: fixed;
+        gap: 340%;
+        background-color: #a20b0b;
+        width: 100%;
+    } */
+    .my-img{
+        display: flex;
+        flex-wrap: wrap;
+        left: 250px;
+        display: none;
+    }
+    .my-img img{
+        width: 250px;
+        margin-top: 320px;
+    }
+     .hamburger-menu{
+        display: inline-block;
+     }
+     .nav-list ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 150%;
+        margin-left: 0;
+        gap: 10px;
+        padding: 10px;
+        background-color: #ffff;
+     }
+     .nav-list ul a{
+        color: rgb(0, 0, 0);
+        padding: 15px;
+        margin: 5px;
+        font-size: 13px;
+     }
+     .left{
+        padding: 30px;
+        /* justify-content: space-between; */
+     }
+     .right .lets-talk{
+        margin-top: 10%;
+        display: none;
+     }
+     .hero-text{
+        font-size: 10px;
+     }
+     .hero-text{
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+     }
+     .hero-text p{
+        margin-left: 37%;
+     }
+     .hero-text .rate{
+        margin-left: 30%;
+        max-width: 100%;
+        margin-bottom: 30px;
+     }
+
+     .project1 img{
+        width: 650px;
+        height: 400px;
+    }
+    .project2 img{
+        width: 650px;
+        height: 400px;
+    }
+    .project3 img{
+         width: 650px;
+        height: 400px;
+    }
+    .mail input{
+        width: 190px;
+    }
+    .name input{
+        width: 190px;
+    }
+    .sub input{
+        width: 418px;
+    }
+    .message textarea{
+        width: 418px;
+    }
+    .form button{
+        width: 418px;
+    }
+    footer{
+        gap: 100px;
+        flex-wrap: wrap;
+    }
+
+}
+@media screen and (max-width: 436px){
+    .my-img{
+        display: none;
+    }
+    .services, .process{
+        flex-wrap: wrap;
+    }
+    .hero-text{
+        font-size: 15px;
+    }
+    .hero-text p{
+        margin-left: 25%;
+    }
+    .hero-text .rate{
+        margin-left: 10px;
+    }
+    .about-me{
+        flex-wrap: wrap;
+    }
+    .projects img{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .text{
+        width: 309px;
+        padding: 10px;
+    }
+    .name input{
+        width: 240px;
+    }
+    .mail input{
+        margin-left: 0;
+        width: 240px;
+    }
+    .sub input{
+        width: 240px;
+    }
+    .message textarea{
+        width: 240px;
+    }
+    .form button{
+        width: 240px;
+    }
+}
+@media screen and (max-width: 375px){
+    .form input{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .name input{
+        width: 180px;
+    }
+    .sub input{
+        width: 180px;
+    }
+    .mail input{
+        margin-left: 0;
+        width: 180px;
+    }
+    .message textarea{
+        width: 180px;
+    }
+    .form button{
+        width: 180px;
+    }
+    .left-empty{
+        width: 370px;
+        height: 370px;
+    }
+    .text{
+        width: 270px;
+        padding: 10px;
+    }
+     .hero-text{
+        font-size: 10px;
+    }
+    .hero-text p{
+        margin-left: 66px;
+    }
+    .hero-text .rate{
+        margin-left: 10px;
+    }
+    .projects img{
+        margin-left: 2px;
+        padding: 3px;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 320px){
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .process{
+        flex-wrap: wrap;
+    }
+    .about-me{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .form{
+        max-width: 100%;
+    }
+    .form input{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .name input{
+        width: 180px;
+    }
+    .sub input{
+        width: 180px;
+    }
+    .mail input{
+        margin-left: 0;
+        width: 180px;
+    }
+    .message textarea{
+        width: 180px;
+    }
+    .form button{
+        width: 180px;
+    }
+    .text{
+        width: 200px;
+        padding: 10px;
+    }
+    .left-empty{
+        width: 300px;
+        height: 300px;
+    }
+    .left-part img{
+        width: 270px;
+    }
+    .projects img{
+        margin-left: 2px;
+        width: 500px;
+        height: 600px;
+        padding: 1px;
+    }
+    .main img{
+        width: 270px;
+    }
+    .services, .process{
+        padding: 20px;
+    }
+    .main .my-img{
+        margin-bottom: 100px;
+    }
+    .my-img img{
+        position: absolute;
+        margin-bottom: 100px;
+    }
+    .hero-text{
+        font-size: 10px;
+    }
+    .hero-text p{
+        margin-left: 41px;
+    }
+    .hero-text .rate{
+        margin-left: 10px;
+    }
+}
