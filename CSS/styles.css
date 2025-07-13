@@ -191,7 +191,7 @@ nav a{
     display: flex;
     gap: 20px;
 }
-.right-contents .icon{
+.right-contents .icon {
     border: 1px solid black;
     width: 40px;
     height: 37px;
@@ -294,15 +294,18 @@ nav a{
 .right-part p{
     font-size: 13px;
 }
-.right-icons{
+.right-icons {
     gap: 30px;
     display: flex;
 }
-.icon1, .icon2, .icon3, .icon4{
+.icon1, .icon2, .icon3, .icon4 {
     border: 1px solid #3b3a3a;
     padding: 6px;
     width: 30px;
     border-radius: 7px;
+}
+.right-icons a{
+    color: white;
 }
 footer{
     display: flex;
@@ -394,7 +397,29 @@ footer{
     padding: 10px;
     font-weight: 300;
 }
+/* back to top */
+  #top {
+    position: absolute;
+    top: 0;
+  }
 
+  .back-to-top {
+    background-color: #A6FF00;
+    position: fixed;
+    bottom: 55px;
+    right: 30px;
+    color: white;
+    padding: 10px;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 30px;
+  }
+
+  .back-to-top:hover {
+    background: #555;
+  }
 /* media query */
 @media screen and (min-width: 1025px){
     .my-img img{
